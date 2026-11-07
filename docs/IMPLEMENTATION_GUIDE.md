@@ -6,18 +6,20 @@ This guide gives you a practical path through the capstone. It does not add new 
 
 Before working on Good To Have or Stretch items, make sure you can check off every item below:
 
-- [ ] Load the provided customers, orders, tickets, tools, eval cases, and knowledge-base docs.
-- [ ] List tickets and open a ticket with customer/order context.
-- [ ] Search knowledge-base docs and return document IDs.
-- [ ] Triage a ticket into category, priority, and escalation decision.
-- [ ] Generate a cited draft reply.
-- [ ] Safely handle `eval_005`, `eval_006`, and `eval_007`.
-- [ ] Recommend one approval-gated action: `start_refund_review` or `create_replacement_order`.
-- [ ] Require approval before executing that action.
-- [ ] Enforce idempotency for that action.
-- [ ] Store minimal traces for AI runs.
-- [ ] Run eval cases and produce a small report.
-- [ ] Demo the workflow through a simple frontend.
+- [x] Load the provided customers, orders, tickets, tools, eval cases, and knowledge-base docs.
+- [x] List tickets and open a ticket with customer/order context.
+- [x] Search knowledge-base docs and return document IDs.
+- [x] Triage a ticket into category, priority, and escalation decision.
+- [x] Generate a cited draft reply.
+- [x] Safely handle `eval_005`, `eval_006`, and `eval_007`.
+- [x] Recommend one approval-gated action: `start_refund_review` or `create_replacement_order`.
+- [x] Require approval before executing that action.
+- [x] Enforce idempotency for that action.
+- [x] Store minimal traces for AI runs.
+- [x] Run eval cases and produce a small report.
+- [x] Demo the workflow through a simple frontend.
+
+Evidence for each item is in the README (design decisions, API overview, demo walkthrough) and in `docs/EVALUATION_REPORT.md`. One caveat applies to the `eval_005` item: the case is handled safely (no disallowed action, escalated), but it fails the expected citation of `KB-ACCOUNT-001`. The report explains why.
 
 ## Suggested Build Order
 

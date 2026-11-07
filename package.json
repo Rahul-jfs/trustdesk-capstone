@@ -1,0 +1,16 @@
+{
+  "name": "trustdesk-capstone",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TrustDesk AI support operations platform (capstone)",
+  "scripts": {
+    "setup": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n server,client -c blue,green \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "seed": "npm --prefix server run seed",
+    "eval": "npm --prefix server run eval",
+    "test": "npm --prefix server test && npm --prefix client test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

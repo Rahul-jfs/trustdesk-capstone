@@ -4,3 +4,9 @@ trustdesk_seed.db
 __pycache__/
 .DS_Store
 
+
+# Phase 0 dependencies and local config
+node_modules/
+.env
+dist/
+*.db
