@@ -27,7 +27,7 @@
     "expected_priority": "high",
     "expected_sentiment": "frustrated",
     "expected_escalation": false,
-    "expected_actions": ["open_carrier_investigation"]
+    "expected_actions": ["open_carrier_investigation"]  
   },
   {
     "ticket_id": "tkt_9003",

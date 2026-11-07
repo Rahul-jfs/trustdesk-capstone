@@ -1,0 +1,26 @@
+{
+  "name": "trustdesk-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TrustDesk AI support operations API (Express)",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/index.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning src/index.js",
+    "seed": "node --disable-warning=ExperimentalWarning src/seed.js",
+    "eval": "node --disable-warning=ExperimentalWarning src/eval/cli.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "groq-sdk": "^0.7.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
